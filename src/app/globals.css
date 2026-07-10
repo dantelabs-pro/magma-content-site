@@ -23,7 +23,14 @@
 
 body {
   @apply bg-canvas text-ink font-sans antialiased;
+  /* 한국어 줄바꿈: 어절(단어) 단위로만 꺾고, 긴 영문·URL은 넘치지 않게 */
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
+
+/* 제목은 줄 길이 균형(balance), 본문 문단은 외톨이 낱말 방지(pretty) — 미지원 브라우저는 무시 */
+h1, h2, h3 { text-wrap: balance; }
+p { text-wrap: pretty; }
 
 /* 글 본문(remark-html 출력) 최소 스타일 — 의존성 최소 원칙으로 타이포그래피 플러그인 대신 직접 정의 */
 .post-body { @apply leading-relaxed text-[15px]; }

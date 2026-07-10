@@ -19,7 +19,7 @@ export default function Home() {
           <div>
             <p className="eyebrow mb-3">브랜드</p>
             <h2 className="font-display text-3xl font-bold leading-snug text-primary">
-              {siteConfig.company.name}는 오래 입을 기본을 만듭니다
+              {siteConfig.company.name}는 오래&nbsp;입을&nbsp;기본을 만듭니다
             </h2>
             <p className="mt-5 leading-relaxed text-ink-sub">
               유행을 좇는 대신 과장 없는 단정함을 택합니다.
